@@ -8,7 +8,7 @@ Namespaces are *logical* because:
 - Kubernetes enforces isolation using rules, scope, and metadata
 - Namespaces help organize environments such as `dev`, `test`, and `prod`
 ### Example: Create a Namespace
->
+
 > ```yaml
 > apiVersion: v1
 > kind: Namespace
@@ -16,13 +16,13 @@ Namespaces are *logical* because:
 >   name: dev
 > ```
 >
-> ### Apply and Verify
->
+### Apply and Verify
+
 > ```bash
 > kubectl apply -f namespaces/dev.yaml
 > kubectl get namespaces
 > ```
->
+
 > ```text
 > NAME              STATUS   AGE
 > default           Active   9d
@@ -31,13 +31,13 @@ Namespaces are *logical* because:
 > kube-public       Active   9d
 > kube-system       Active   9d
 > ```
->
-> ## Pod
->
-> A **Pod** is the smallest deployable unit in Kubernetes.
->
-> Created on the `dev` folder a YAML file named `nginx.yaml`, which defines a Pod.
->
+
+ ## Pod
+
+ A **Pod** is the smallest deployable unit in Kubernetes.
+
+ Created on the `dev` folder a YAML file named `nginx.yaml`, which defines a Pod.
+
 > ```yaml
 > apiVersion: v1
 > kind: Pod
@@ -53,17 +53,17 @@ Namespaces are *logical* because:
 >       ports:
 >         - containerPort: 80
 > ```
->
-> Applied using:
->
+
+Applied using:
+
 > ```bash
 > kubectl apply -f k8s/dev/nginx.yaml
 > ```
->
+
 > ```bash
 > kubectl describe pod demo-pod -n dev
 > ```
->
+
 > ```text
 > ```text
 > Name:             demo-pod
@@ -126,6 +126,5 @@ Namespaces are *logical* because:
 >   Normal  Started    108s  kubelet            Started container app
 > ```
 
->
-> A standalone Pod is not recreated when deleted.  
-> A Pod managed by a Deployment is recreated automatically.
+A standalone Pod is not recreated when deleted.  
+A Pod managed by a Deployment is recreated automatically.
