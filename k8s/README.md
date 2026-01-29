@@ -65,7 +65,6 @@ Applied using:
 > ```
 
 > ```text
-> ```text
 > Name:             demo-pod
 > Namespace:        dev
 > Priority:         0
@@ -126,5 +125,10 @@ Applied using:
 >   Normal  Started    108s  kubelet            Started container app
 > ```
 
+```text
+What happens if I delete the pod? Nothing
+Who will recreate it? No one
+Why?
 A standalone Pod is not recreated when deleted.  
 A Pod managed by a Deployment is recreated automatically.
+```
