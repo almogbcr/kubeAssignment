@@ -36,7 +36,9 @@ kube-system       Active   9d
 
 ## Pod
 A **pod** is the smallest deployable unit in Kubernetes.
+
 Created on dev folder pod a yaml file - named nginx.yaml
+
 Applied it with Kubectl apply -f dev/nginx.yaml (k8s/dev/nginx.yaml)
 
 ```bash
