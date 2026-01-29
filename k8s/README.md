@@ -126,8 +126,9 @@ Applied using:
 > ```
 
 
-What happens if I delete the pod? Nothing
-Who will recreate it? No one
+What happens if I delete the pod? Nothing  
+Who will recreate it? No one  
+
 Why?
 >```text
 >Because there is no any contoller that will create it
