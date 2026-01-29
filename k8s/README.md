@@ -19,3 +19,13 @@ kind: Namespace
 metadata:
   name: dev
 ```
+
+ubectl apply -f namespaces/dev.yaml
+kubectl get namespaces
+
+NAME              STATUS   AGE
+default           Active   9d
+dev               Active   30s
+kube-node-lease   Active   9d
+kube-public       Active   9d
+kube-system       Active   9d
