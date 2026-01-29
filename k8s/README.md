@@ -125,10 +125,11 @@ Applied using:
 >   Normal  Started    108s  kubelet            Started container app
 > ```
 
-```text
+
 What happens if I delete the pod? Nothing
 Who will recreate it? No one
 Why?
+```text
 Because there is no any contoller that will create it
 >A standalone Pod is not recreated when deleted. 
 >A Pod managed by a Deployment is recreated automatically.
